@@ -3,6 +3,7 @@
   margin: 0 auto;
   border: 3px solid black;
   border-radius: 20px;
+  overflow: hidden;
 }
 
 .wrapper {
@@ -20,4 +21,39 @@
   height: 300px;
   margin: 0 auto;
   margin-bottom: 30px;
+}
+
+.name {
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.text {
+  color: grey;
+}
+
+.statsList {
+  display: flex;
+  justify-content: space-around;
+  background-color: darkgrey;
+  border-top: 3px solid grey;
+  width: 100%;
+}
+
+.statsItem {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  width: 100%;
+}
+
+.statsItem:nth-child(1),
+.statsItem:nth-child(2) {
+  border-right: 3px solid grey;
+}
+
+.stats {
+  font-weight: 600;
 }
