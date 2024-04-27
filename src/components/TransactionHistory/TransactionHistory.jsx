@@ -2,12 +2,12 @@ import css from './TransactionHistory.module.css';
 
 const TransactionHistory = ({ items }) => {
   return (
-    <table>
-      <thead>
+    <table className={css.table}>
+      <thead className={css.transactionHeader}>
         <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
+          <th className={css.transactionTitle}>Type</th>
+          <th className={css.transactionTitle}>Amount</th>
+          <th className={css.transactionTitle}>Currency</th>
         </tr>
       </thead>
       <tbody>
